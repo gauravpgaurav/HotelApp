@@ -1,0 +1,171 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <style>
+    
+        h2{
+            color: red;
+        }
+        .hotel,.room,.book {
+            display:none;
+        }
+        
+        hr
+        {
+            width: 25%;
+            width: 25%;
+            float: left;
+        }
+        
+        select{
+            width: 130px;
+        }
+        button{
+            width: 130px;
+        }
+    </style>
+    
+    <title>Hotel : Case Study</title>
+    
+<body>
+    
+    <h2>Hotel App</h2>
+    
+    <hr style="width:100%;">
+    
+    <div id="roomSelection">
+    
+        <select id="cityList"></select>   
+        <button id="searchHotels">Search for Hotels</button>  
+    
+        <br>
+    
+        <hr class="hotel">
+    
+        <br>
+    
+        <select id="hotelList" class="hotel"></select>
+        <button id="searchRooms" class="hotel">Search for Rooms</button>
+    
+        <br>
+        
+        <hr class="room">
+    
+        <br>
+    
+        <select id="roomList" class="room"></select>
+        <button id="bookRoom" class="room">Book Room</button>
+    
+        <br>
+        
+        <hr class="book">
+    
+        <br>
+    
+    </div>
+    
+    <div id="userLogin">
+    
+            
+            <fieldset>
+            
+                <legend>New User</legend>
+                
+                <table>
+                    <tr>
+                        <td><input type="hidden" id="id1" name="id1"></td>
+                    </tr>
+                    <tr>
+                        <td>First Name : </td>
+                        <td><input type="text" placeholder="Enter First Name" id="firstname1" name="firstname1"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name : </td>
+                        <td><input type="text" placeholder="Enter Last Name" id="lastname1" name="lastname1"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number : </td>
+                        <td><input type="tel" placeholder="Enter Mobile Number" id="mobilenumber1" name="mobilenumber1"></td>
+                    </tr>
+                    <tr>
+                        <td>Email : </td>
+                        <td><input type="email" placeholder="Enter Email" id="email1" name="email1"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button id="regUser">Register User</button></td>
+                    </tr>
+                </table>
+                
+            </fieldset>   
+        
+            <fieldset>
+            
+                <legend>Existing User</legend>
+                
+                <table>
+                    <tr>
+                        <td>User ID : </td>
+                        <td><input type="text" placeholder="Enter User ID" id="id2" name="id2"></td>
+                    </tr>
+                    <tr>
+                        <td>First Name : </td>
+                        <td id="firstname2"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name : </td>
+                        <td id="lastname2"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number : </td>
+                        <td id="mobilenumber2"></td>
+                    </tr>
+                    <tr>
+                        <td>Email : </td>
+                        <td id="email2"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button id="getUser">Get User</button></td>
+                    </tr>
+                </table>
+                
+            </fieldset>
+        
+    </div>
+    
+    <div id="booking">
+        
+        <legend>Booking</legend>
+                
+                <table>
+                    <tr>
+                        <td>Check : </td>
+                        <td><input type="text" placeholder="Enter User ID" id="id2" name="id2"></td>
+                    </tr>
+                    <tr>
+                        <td>First Name : </td>
+                        <td id="firstname2"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name : </td>
+                        <td id="lastname2"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number : </td>
+                        <td id="mobilenumber2"></td>
+                    </tr>
+                    <tr>
+                        <td>Email : </td>
+                        <td id="email2"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button id="getUser">Get User</button></td>
+                    </tr>
+                </table>
+                
+            </fieldset>
+        
+    </div>
+    
+</body>
+
+    <script src="action.js"></script>
+</html>

@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "Mongodata": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "HotelDb",
+    "password": "",
+    "name": "Mongodata",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

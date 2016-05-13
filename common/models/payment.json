@@ -1,0 +1,30 @@
+{
+  "name": "payment",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mongodb": {
+    "collection": "payment"
+  },
+  "properties": {
+      
+    "bookingid": {
+      "type": "string",
+      "required": true
+    },
+    "custid": {
+      "type": "string",
+      "required": true
+    },
+    "cost": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

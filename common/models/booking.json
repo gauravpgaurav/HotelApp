@@ -1,0 +1,38 @@
+{
+  "name": "booking",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mongodb": {
+    "collection": "booking"
+  },
+  "properties": {
+      
+    "roomid": {
+      "type": "string",
+      "required": true
+    },
+    "custid": {
+      "type": "string",
+      "required": true
+    },
+    "checkin_date": {
+      "type": "string",
+      "required": true
+    },
+    "checkout_date": {
+      "type": "string",
+      "required": true
+    },
+    "booking_date": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
